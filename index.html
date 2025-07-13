@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Highest Converting Real Estate Marketing Package in Phuket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue: #56a5cc;
+            --yellow: #e6bc44;
+            --orange: #d66038;
+            --white: #ffffff;
+            --black: #1e1e1e;
+        }
+
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: var(--black);
+            background: var(--white);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Typography */
+        .heading-xl {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .heading-lg {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 96px 0;
+        }
+
+        section:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                       url('Pro Retouch - After.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding-top: 24px; /* Reduced from 48px */
+        }
+
+        .hero-content {
+            position: relative;
+            padding-top: 80px; /* Add padding to create space for absolute positioned logo */
+        }
+
+        .hero p {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 48px;
+            margin-top: 48px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 24px;
+        }
+
+        /* Updated Button Styles with Gradients */
+        .button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, var(--blue), var(--yellow), var(--orange));
+            background-size: 200% 200%;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 100px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            border: 2px solid transparent;
+            animation: gradientShift 5s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .button:hover {
+            background-size: 150% 150%;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Package Section with Background Image */
+        #package {
+            position: relative;
+            color: white;
+        }
+
+        #package::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+                        url('image 2.JPG') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        #package .price-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #package .text-gray-600 {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        #package .package-list li::before {
+            color: var(--orange);
+        }
+
+        /* Update other button variants */
+        .button.dark {
+            background: linear-gradient(135deg, var(--blue), var(--yellow), var(--orange));
+            background-size: 200% 200%;
+            animation: gradientShift 5s ease infinite;
+        }
+
+        .button.dark:hover {
+            background-size: 150% 150%;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Form */
+        .form-grid {
+            display: grid;
+            gap: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            display: grid;
+            gap: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 64px 0;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+        }
+
+        /* Logo Styles */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Contact Buttons */
+        .contact-options {
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 1px solid #eee;
+        }
+
+        .contact-options-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .contact-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 32px;
+            border-radius: 20px;
+            background: #f8f8f8;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-4px);
+            background: #f0f0f0;
+        }
+
+        .contact-button img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 16px;
+        }
+
+        .contact-button span.title {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .contact-button span.description {
+            text-align: center;
+            color: #666;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        /* Feature Icons Update */
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            transition: transform 0.3s ease;
+            background: #f8f8f8;
+            padding: 16px;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Package */
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 48px;
+            align-items: start;
+        }
+
+        .package-list {
+            list-style: none;
+        }
+
+        .package-list li {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .package-list li::before {
+            content: "✓";
+            color: #000;
+        }
+
+        /* Price Box */
+        .price-box {
+            background: #f9f9f9;
+            padding: 48px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 300;
+            margin: 24px 0;
+        }
+
+        /* Add-ons */
+        .addons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+
+        .addon-card {
+            background: #fff;
+            padding: 24px;
+            transition: transform 0.2s;
+        }
+
+        .addon-card:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Add Logo Styles */
+        .hero-logo {
+            width: 180px;
+            height: auto;
+            position: absolute;
+            top: -100px; /* Move logo up significantly */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="Urbaan - Color-White_x1.png" alt="Urbaan Visuals" class="hero-logo">
+                <h1 class="heading-xl">The Highest Converting Real Estate Marketing Package in Phuket</h1>
+                <p>Your Property, Sold Faster. Marketed Like a Million-Dollar Listing.</p>
+                <a href="#package" class="button">Explore Package</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2 class="heading-lg" style="text-align: center;">Everything You Need to Sell Faster</h2>
+            <p style="text-align: center; color: #666; font-size: 1.25rem; margin-bottom: 48px;">
+                One complete package, no hidden fees, delivered in 72 hours
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="camera.png" alt="Camera Icon">
+                    </div>
+                    <h3>Premium Content Creation</h3>
+                    <p>Professional photos, cinematic videos, and virtual tours that showcase your property's best features.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="megaphone.webp" alt="Megaphone Icon">
+                    </div>
+                    <h3>Complete Digital Presence</h3>
+                    <p>Custom property website, social media assets, and marketing materials all branded to your needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="fast.png" alt="Fast Delivery Icon">
+                    </div>
+                    <h3>72-Hour Delivery</h3>
+                    <p>Quick turnaround time ensuring your property hits the market while leads are hot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Section -->
+    <section id="package">
+        <div class="container">
+            <div class="package-grid">
+                <div>
+                    <h2 class="heading-lg">The Complete Package</h2>
+                    <p style="color: #666; font-size: 1.25rem; margin-bottom: 32px;">
+                        Everything you need to market your property like a luxury listing, delivered within 72 hours.
+                    </p>
+                    <ul class="package-list">
+                        <li>20–30 premium retouched and color-graded interior + exterior photos</li>
+                        <li>1x cinematic video tour (with branding + music)</li>
+                        <li>1x vertical reel version for Instagram + Facebook</li>
+                        <li>Branded property website with contact form</li>
+                        <li>Branded marketing flyers (ready to print)</li>
+                        <li>Branded social media assets</li>
+                        <li>Interactive floor plans</li>
+                        <li>3D Virtual Tour (Matterport-style)</li>
+                        <li>72h delivery from shoot</li>
+                        <li>6-12 months website hosting included</li>
+                    </ul>
+                </div>
+                <div class="price-box">
+                    <div style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.875rem;">Starting from</div>
+                    <div class="price">30,000 THB</div>
+                    <div style="color: #666; margin-bottom: 24px;">Complete Package</div>
+                    <p style="color: #666; font-size: 0.875rem; margin-bottom: 16px;">
+                        * Premium tier available at 40,000-45,000 THB includes paid campaign setup and custom domain
+                    </p>
+                    <p style="color: #666; font-size: 0.875rem; margin-bottom: 32px;">
+                        * Only 3 shoots available per week
+                    </p>
+                    <a href="#contact" class="button">Book Your Shoot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-ons Section -->
+    <section id="addons">
+        <div class="container">
+            <h2 class="heading-lg" style="text-align: center;">Optional Add-Ons</h2>
+            <p style="text-align: center; color: #666; font-size: 1.25rem; margin-bottom: 48px;">
+                Enhance your package with these premium services
+            </p>
+            <div class="addons-grid">
+                <div class="addon-card">
+                    <div class="logo-container">
+                        <img src="Meta logo.png" alt="Meta" class="logo">
+                        <img src="Facebook Logo.png" alt="Facebook" class="logo">
+                        <img src="Instagram Logo.webp" alt="Instagram" class="logo">
+                    </div>
+                    <h3>Social Media Advertising</h3>
+                    <p style="color: #666; margin: 16px 0;">Targeted Facebook/Instagram Ads campaign setup and management</p>
+                    <p>Starting from <strong>7,000 THB</strong></p>
+                </div>
+                <div class="addon-card">
+                    <div class="logo-container">
+                        <img src="Google Logo Full.webp" alt="Google" class="logo">
+                    </div>
+                    <h3>Google Advertising</h3>
+                    <p style="color: #666; margin: 16px 0;">Reach potential buyers through Google's vast advertising network</p>
+                    <p>Custom pricing</p>
+                </div>
+                <div class="addon-card">
+                    <div class="logo-container">
+                        <img src="youtube.png" alt="YouTube" class="logo">
+                    </div>
+                    <h3>YouTube Promotion</h3>
+                    <p style="color: #666; margin: 16px 0;">Promote your property video to targeted audiences</p>
+                    <p>Custom pricing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="heading-lg" style="text-align: center;">Ready to Get Started?</h2>
+            <p style="text-align: center; color: #666; font-size: 1.25rem; margin-bottom: 48px;">
+                Book your shoot now and transform how you market your property. Limited slots available each week.
+            </p>
+            <form class="form-grid">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="propertyType">Property Type</label>
+                    <select id="propertyType">
+                        <option value="villa">Villa</option>
+                        <option value="condo">Condo</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="land">Land</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell us about your property and any specific requirements..."></textarea>
+                </div>
+                <button type="submit" class="button dark">Book Your Shoot</button>
+            </form>
+
+            <div class="contact-options">
+                <div class="contact-options-title">
+                    <h3 class="heading-lg" style="font-size: 2rem;">Prefer to chat first?</h3>
+                    <p style="color: #666;">Choose the option that works best for you</p>
+                </div>
+                <div class="contact-buttons">
+                    <a href="#" class="contact-button">
+                        <img src="discovery call.png" alt="Discovery Call">
+                        <span class="title">Schedule Discovery Call</span>
+                        <span class="description">Book a 15-minute call to discuss your property and how we can help showcase it best</span>
+                    </a>
+                    <a href="#" class="contact-button">
+                        <img src="Whatsapp Logo.webp" alt="WhatsApp">
+                        <span class="title">Chat on WhatsApp</span>
+                        <span class="description">Get quick answers to your questions and instant pricing information</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
