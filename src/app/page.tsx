@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Package from "@/components/Package";
